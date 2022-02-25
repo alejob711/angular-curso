@@ -1,3 +1,4 @@
+import { summaryFileName } from '@angular/compiler/src/aot/util';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bases';
+  titulo : string = 'Contador App';
+  resultado : number = 10;
+  base   : number = 5;
+
+  acumular = (valor:number) => this.resultado += valor;
+
 }

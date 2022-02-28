@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { AcumuladorModule } from './acumulador/acumulador.module';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AcumuladorModule } from './acumulador/acumulador.module';
   imports: [
     BrowserModule,
     AcumuladorModule,
-    HeroesModule
+    HeroesModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]

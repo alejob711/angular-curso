@@ -39,3 +39,28 @@
   .p-1 {
     padding: 1px;
   }
+
+  .row{
+    display: flex;
+  }
+
+  .col{
+    flex-grow: 1;
+  }
+ 
+  .col2{
+    flex-grow: 2;
+  }
+
+  .row>.col:first-child{
+    margin-right: 10px;
+  }
+
+  h3{
+    padding-left: 10px;
+  }
+
+  input{
+    display: block;
+    margin: 5px;
+  }

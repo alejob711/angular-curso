@@ -1,0 +1,42 @@
+
+
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- <h3>Personajes</h3>
+        <hr>
+        <ul *ngIf="personajes.length > 0 ; else noPersonajes">
+            <li *ngFor="let per of personajes">{{per.nombre}} - {{per.poder | number}}</li>
+        </ul>
+        <ng-template #noPersonajes>
+            <p>No Hay Personajes Registrados</p>
+        </ng-template> -->
+        <app-personajes></app-personajes>
+    </div>
+
+    <div class="col2">
+        <h3>Agregar</h3>
+        <hr>
+        <form (ngSubmit)="agregarElemento()">
+
+            <input 
+                type="text" 
+                placeholder="Nombre de personaje"
+                name="nombre"
+                [(ngModel)]="personaje.nombre"
+            >
+
+            <input 
+                type="number" 
+                placeholder="poder"
+                name="poder"
+                [(ngModel)]="personaje.poder"    
+            >
+
+            <button type="submit">Agregar</button>
+
+        </form>
+    </div>
+</div>
